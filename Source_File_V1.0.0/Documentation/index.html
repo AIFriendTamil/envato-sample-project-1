@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Gallery Templates Documentation</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/css/normalize.min.css">
+      <link rel="stylesheet" href="assets/css/foundation.css">
+      <link rel="stylesheet" href="assets/css/prism.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+   </head>
+   <body>
+      <header id="site-header">
+         <div class="row">
+            <div class="large-10 large-centered columns">
+               <div class="name">
+                  <h3>Gallery Templates</h3>
+                  <p>Elegant and Creative Bootstrap Gallery Designs</p>
+               </div>
+               <ul class="meta">
+                  <li><strong>Author:</strong> <a href="https://codecanyon.net/user/techfuturix">TechFuturix</a></li>
+                  <li><strong>Live Preview:</strong> <a href="/">View Demo</a></li>
+                  <li><strong>Support:</strong> <a href="mailto:mohamed.jafir.m16@gmail.com">Ask a Question</a></li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <section id="site-body">
+         <div id="container" class="row">
+            <div id="sidebar" class="large-4 large-push-8 columns" data-magellan-expedition="fixed">
+               <div class="sticky">
+                  <h3>Table of Contents</h3>
+                  <ol>
+                     <li data-magellan-arrival="getting-started"><a href="#getting-started">Getting Started</a></li>
+                     <li data-magellan-arrival="html-files"><a href="#html-files">HTML Files</a></li>
+                     <li data-magellan-arrival="stylesheet-files"><a href="#assets-overview">Assets Overview</a></li>
+                     <li data-magellan-arrival="support-desk"><a href="#support-desk">Support</a></li>
+                     <li data-magellan-arrival="files-resources"><a href="#files-resources">Sources &amp; Credits</a></li>
+                  </ol>
+               </div>
+            </div>
+            <div id="main-content" class="large-8 large-pull-4 columns">
+
+              <!-- Introduction -->
+               <a name="introduction"></a>
+               <section id="introduction" class="section" data-magellan-destination="introduction">
+                  <h1>Greetings!</h1>
+                  <p class="lead">You are the proud owner of a Regular License for the Gallery Templates.</p>
+                  <p>Thank you for purchasing this template. This documentation is designed to guide you through the structure and usage of the template. Please review it thoroughly to understand how to customize and optimize the template for your needs. Basic knowledge of HTML and CSS is recommended for customization.</p>
+               </section>
+
+               <!-- Getting Started -->
+               <a name="getting-started"></a>
+               <section id="getting-started" class="section" data-magellan-destination="getting-started">
+                  <h1>1. Getting Started</h1>
+                  <br>
+                  <p>To begin using the Gallery Templates, unzip the downloaded package and locate the following main folders:</p>
+                  <section class="sub-section">
+                    <h2>1.1. Package contents</h2>
+                    <ul>
+                       <li><strong>Gallery</strong> — Contains the original template files, including HTML, CSS, etc. Upload this folder to your server after making necessary modifications.</li>
+                       <li><strong>Documentation</strong> — Includes this documentation for your reference.</li>
+                    </ul>
+                  </section>
+
+                  <section class="sub-section">
+                    <h2>1.2. File Structure</h2>
+                    <p>The file structure of the gallery templates is as follows:</p>
+                    <pre data-language="Folder Map"><code class="language-markup">Source_File_V1.0.0/
+|-- Documentation/
+    |--assets/
+    |--index.html
+|-- Gallery/
+    |--assets/
+    |--classic-gallery.html
+    |--full-width-gallery.html
+    |--gallery-grid-effects.html
+                    </pre></code>
+                    <p>For detailed information on file contents and structure, refer to the documentation.</p>
+                  </section>
+               </section>
+
+               <!-- HTML Files -->
+               <a name="html-files"></a>
+               <section id="html-files" class="section"  data-magellan-destination="html-files">
+                  <h1>2. HTML Files</h1>
+                  <br>
+                  <p>The Gallery Templates feature responsive and modern Bootstrap-based HTML files. These include:</p>
+                  <ul>
+                     <li><code>full-width-gallery.html</code>: A gallery layout with a full-width design, ideal for showcasing large images.</li>
+                     <li><code>classic-gallery.html</code>: A traditional gallery layout suitable for portfolio displays.</li>
+                     <li><code>gallery-grid-effects.html</code>: A creative grid layout with hover effects for interactive galleries.</li>
+                  </ul>
+                  <p>Each file follows a standardized structure for ease of customization. Below is a sample structure:</p>
+                  <pre data-language="HTML Skeleton"><code class="language-markup">
+<!-- Use figure for a more semantic html -->
+<figure itemprop="associatedMedia">
+   <!-- Image Source or Link-->
+   <a href="assets/image/img1.jpg" data-width="1200"
+     data-caption="Image 1<br><em class='text-muted'>© Dominik Schröder</em>" 
+     data-height="900" itemprop="contentUrl">
+     <!-- (Thumbnail) Image Source or Link-->
+     <img src="assets/image/img1.jpg" itemprop="thumbnail" alt="Image description">
+   </a>
+ </figure>
+
+ 
+ <!-- OR -->
+ 
+ 
+ <!-- Use 'grid__item' for Individual  -->
+ <div class="grid__item" data-size="1280x1131">
+   <!-- Image&Thumbnail Source or Link-->
+   <a href="assets/image/img5.jpg" class="img-wrap"><img src="assets/image/img5.jpg" alt="img05" />
+      <!-- Content -->
+      <div class="description description--grid">
+         <!-- Content Title -->
+         <h3>The Corpse</h3>
+         <!-- Content Description -->
+         <p>Recognize meat for what it really is: the antibiotic- and pesticide-laden corpse of a tortured animal. <em>&mdash; Ingrid Newkirk</em></p>
+         <!-- Content Details/Elements -->
+         <div class="details">
+            <ul>
+               <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+               <li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+               <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+               <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+               <li><i class="icon icon-iso"></i><span>80</span></li>
+            </ul>
+         </div>
+      </div>
+   </a>
+</div>
+                  </code></pre>
+               </section>
+               
+               <!-- Assets Overview -->
+               <a name="assets-overview"></a>
+               <section id="assets-overview" class="section" data-magellan-destination="assets-overview">
+                  <h1>3. Assets Overview</h1>
+                  <br>
+                  <p>All asset-related files for this template are organized in the <code>assets</code> folder. The folder structure is designed to make customization straightforward and efficient. Below is the updated folder map for your gallery template:</p>
+                  <pre data-language="Folder Map"><code class="language-markup">assets/
+|-- bootstrap/                  # Contains Bootstrap framework files
+|-- css/                        # Contains all stylesheet files
+|-- fonts/                      # Contains font files
+|-- image/                      # Contains all template images
+|-- js/                         # Contains JavaScript files
+                  </code></pre>
+                  <br>
+                  <p>The <code>css</code> folder contains individual CSS files for each gallery template, allowing you to easily modify the styles for specific pages.</p>
+                  <p>
+                     When customizing, avoid modifying the HTML code directly. Instead, make changes to the relevant CSS file. The CSS files include media queries to ensure responsiveness across all device sizes. Familiarizing yourself with these files will help you achieve the desired design and layout for your gallery templates.
+                  </p>
+               </section>
+
+
+               <!-- Support -->
+               <a name="support-desk"></a>
+               <section id="support-desk" class="section" data-magellan-destination="support-desk">
+                  <h1>4. Support</h1>
+                  <p>Thank you for choosing our gallery templates! We are committed to assisting you with any questions or issues you may encounter. Our support covers answering queries and resolving bugs related to the templates.</p>
+                  <p>Please note that our support does not include customization or installation services, nor assistance with third-party tools or plugins. However, we will do our best to provide guidance wherever possible.</p>
+                  <p>If you need support, please review the following checklist before reaching out:</p>
+                  <ul>
+                     <li>Ensure your query is related to the template itself and not a customization request.</li>
+                     <li>Review the provided documentation and any related guides or FAQs.</li>
+                     <li>Double-check any changes you have made to the template to ensure no mistakes were introduced.</li>
+                     <li>Try searching online for potential solutions—many common issues can be resolved quickly with a simple search.</li>
+                  </ul>
+                  <p>If you still require assistance, include the template name and a detailed description of your issue when contacting us. Feel free to reach out via our Support Center. We’ll do our best to help!</p>
+               </section>
+               
+
+               <!-- Sources and Credits -->
+               <a name="files-resources"></a>
+               <section id="files-resources" class="section" data-magellan-destination="files-resources">
+                  <h1>5. Sources &amp; Credits</h1>
+                  <ul>
+                     <li><strong>Bootstrap</strong></li>
+                     <li><strong>Photoswipe</strong></li>
+                     <li><strong>FontAwesome</strong></li>
+                     <li><strong>Google Fonts</strong></li>
+                  </ul>
+               </section>
+
+            <h4>Thank You...</h4>
+            </div>
+         </div>
+      </section>
+
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script src="assets/js/foundation.js"></script>
+      <script src="assets/js/prism.js"></script>
+      <script src="assets/js/smoothscroll.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- title -->
+  <title>Gallery demo</title>
+
+  <!-- Import Bootstarp Styles -->
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+
+  <!-- Import PhotoSwipe Styles -->
+  <link rel="stylesheet" href="assets/css/default-skin.css">
+  <link rel="stylesheet" href="assets/css/photoswipe.css">
+
+  <!-- Font -->
+  <link href='https://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/gallery.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <h1 class="text-center">
+          Galley<br>
+          <small><em>Gallery Demo</em></small>
+        </h1>
+
+        <!-- Galley wrapper that contains all items -->
+        <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+          <!-- Use figure for a more semantic html -->
+          <figure itemprop="associatedMedia">
+            <!-- Image Source or Link-->
+            <a href="assets/image/img1.jpg" data-width="1200"
+              data-caption="Image 1<br><em class='text-muted'>© Dominik Schröder</em>" 
+              data-height="900" itemprop="contentUrl">
+              <!-- (Thumbnail) Image Source or Link-->
+              <img src="assets/image/img1.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img2.jpg" data-width="1200"
+              data-caption="Image 2<br><em class='text-muted'>© Patty O'Furniture</em>" 
+              data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img2.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img3.jpg" data-width="1200"
+              data-caption="Image 3<br><em class='text-muted'>© Ann Chovey</em>" 
+              data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img3.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img5.jpg" data-width="1200"
+              data-caption="Image 4<br><em class='text-muted'>© Hazel Nutt</em>" 
+              data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img5.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img15.jpg" data-width="1200"
+              data-caption="Image 5<br><em class='text-muted'>© Chris P. Bacon</em>" 
+              data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img15.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img6.jpg" data-width="1200"
+              data-caption="Image 6<br><em class='text-muted'>© Marsha Mellow</em>" 
+              data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img6.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img7.jpg" data-width="1200"
+              data-caption="Image 7<br><em class='text-muted'>© Olive Yew.</em>"
+               data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img7.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img8.jpg" data-width="1200"
+              data-caption="Image 8<br><em class='text-muted'>© Barb Akew.</em>" 
+              data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img8.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img9.jpg" data-width="1200"
+              data-caption="Image 9<br><em class='text-muted'>© Olive Yew.</em>"
+               data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img9.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img10.jpg" data-width="1200"
+              data-caption="Image 10<br><em class='text-muted'>© Hazel Nutt</em>"
+               data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img10.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img11.jpg" data-width="1200"
+              data-caption="Image 11<br><em class='text-muted'>© Aida Bugg</em>" 
+              data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img11.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia">
+            <a href="assets/image/img14.jpg" data-width="1200"
+              data-caption="Image 12<br><em class='text-muted'>© Barb Akew.</em>" 
+              data-height="900" itemprop="contentUrl">
+              <img src="assets/image/img14.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+           It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+      <!-- Container that holds slides. 
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <!--  Controls are self-explanatory. Order can be changed. -->
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Import jQuery and PhotoSwipe Scripts -->
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/photoswipe.min.js"></script>
+  <script src="assets/js/photoswipe-ui-default.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="assets/js/gallery.js"></script>
+
+</body>
+
+</html>
